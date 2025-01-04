@@ -1,0 +1,12 @@
+[project]
+name = "mcp2tavily"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=0.4.1",
+    "load-dotenv>=0.1.0",
+    "tavily-python>=0.5.0",
+    "uvicorn>=0.34.0",
+]
