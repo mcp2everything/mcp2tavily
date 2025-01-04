@@ -4,7 +4,7 @@
 
 ## 系统要求
 
-- Python 3.8+
+- Python 3.11+
 - UV包管理器
 - Tavily API密钥
 
@@ -18,10 +18,8 @@ cd mcp2tavily
 
 2. 创建并编辑环境变量文件
 ```bash
-# 创建.env文件
-touch .env
 # 添加Tavily API密钥到.env文件
-echo "TAVILY_API_KEY=你的api密钥" > .env
+.env
 ```
 
 3. 使用UV创建虚拟环境
@@ -72,6 +70,8 @@ fastmcp dev mcp2tavily.py
 
 ## 手动添加Cline Continue Claude
 打开Cline Continue Claude的MCP服务器配置文件，加入以下信息
+```json
+
 "mcp2tavily": {
       "command": "uv",
       "args": [
@@ -90,4 +90,17 @@ fastmcp dev mcp2tavily.py
         "TAVILY_API_KEY": "API密钥"
       }
     }
+```
 
+
+## 详细操作步骤
+### Cline集成
+![配置](./images/1.png)
+
+### Cline集成
+![配置](./images/2.png)
+### Cline集成
+![配置](./images/3.png)
+
+### 使用示例
+![搜索示例](./images/example.png)

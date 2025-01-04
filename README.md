@@ -4,7 +4,7 @@ A MCP protocol server that implements web search functionality using the Tavily 
 
 ## Prerequisites
 
-- Python 3.8+
+- Python 3.11+
 - UV package manager
 - Tavily API key
 
@@ -61,8 +61,12 @@ Once running, you can access the MCP Inspector at: http://localhost:5173
 
 - `TAVILY_API_KEY`: Your Tavily API key (required)
 
+## Step-by-Step Guide
+
 ## 手动添加Cline Continue Claude
-打开Cline Continue Claude的MCP服务器配置文件，加入以下信息
+Cline Continue Claude的MCP JSON FILE
+```json
+
 "mcp2tavily": {
       "command": "uv",
       "args": [
@@ -81,3 +85,17 @@ Once running, you can access the MCP Inspector at: http://localhost:5173
         "TAVILY_API_KEY": "API密钥"
       }
     }
+```
+
+
+
+### Cline
+![配置](./images/1.png)
+
+### Cline
+![配置](./images/2.png)
+### Cline
+![配置](./images/3.png)
+
+### EXAMPLE
+![搜索示例](./images/example.png)
